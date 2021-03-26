@@ -1,0 +1,22 @@
+{
+    "query_name": {
+        "table_name": "table",
+        "columns": [
+            "*"
+        ],
+        "joins": [],
+        "where": "column1 = %s"
+    },
+    "query_name1": {
+        "table_name": "table",
+        "columns": [
+            "column1",
+            "column2"
+        ],
+        "joins": [
+            "LEFT JOIN table1 USING (column1)",
+            "LEFT JOIN table2 USING (column2)"
+        ],
+        "where": "column1 = %s"
+    }
+}
